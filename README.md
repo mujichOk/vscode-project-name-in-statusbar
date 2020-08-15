@@ -14,10 +14,16 @@ Also provides few options for label template and it's alignment in status bar.
         "type": "string",
         "enum": [
             "none",
-            "folderName"
+            "folderName",
+            "commandOutput"
         ],
         "default": "folderName",
         "description": "Defines way of getting project name"
+    },
+    "projectNameInStatusBar.command": {
+        "type": "string",
+        "default": "echo \"ProjectName\"",
+        "description": "Specifies the command for when using the 'commandOutput' source option. Uses first line of the command output."
     },
     "projectNameInStatusBar.align": {
         "type": "string",
